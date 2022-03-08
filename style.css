@@ -1,13 +1,13 @@
 /* style.css */
-*{
+/*{
     border:1px solid blue;
-}
+}*/
 
 
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 150vh;
 }
 
 div {
@@ -18,9 +18,16 @@ a{
     text-decoration: none;
 }
 
-.container1, .container2, .container3, .container4, .container5{
-    flex: 1 1 20%;
+img {
+    height: 100%;
+    width: 100%;
 }
+
+.container1, .container2, .container3, .container4, .container5{
+    flex: 0 1 20%;
+}
+
+/*Logo, Links, Hero Text*/
 
 .container1{
     background-color: #1f2937;
@@ -68,11 +75,16 @@ a{
     font-size:48px;
     font-weight:bolder;
     color: #F9FAF8;
+    margin:0;
+}
+
+.second-text{
+    margin: 0;
 }
 
 .top-image{
-    height:auto;
-    width: auto;
+    height: 300px;
+    width: 300px;
     flex: 0 1 50%;
 }
 
@@ -81,18 +93,118 @@ a, .second-text{
     color: #E5E7EB;
 }
 
-.container2{
+/* Info Boxes*/
 
+.container2{
+    flex-direction: column;
+    align-items: center;
 }
+.cont2-nest{
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-header{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin-top: 40px;
+}
+
+.info-box-cont{
+    justify-content: center;
+    gap:40px;
+    margin: 40px 0;
+}
+
+.info-box{
+    flex-direction: column;
+    flex: 0 1 10%;
+}
+
+.info-img{
+    border-radius: 15px;
+    border:2px solid #3882F6;
+}
+
+/*Inspirational quote*/
 
 .container3{
-    
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 20px;
 }
+
+.inspire{
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 60%;
+}
+
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+}
+
+.sig{
+    font-size: 26px;
+    align-self: flex-end;
+}
+/*Call box & button*/
 
 .container4{
-    
+    justify-content: center;
 }
 
+.call-box{
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    flex: 0 1 60%;
+    gap: 15px;
+    padding: 0 50px 0 50px;
+    margin: 30px;
+    border-radius: 25px;
+}
+
+.call-text{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action-txt{
+    color: white;
+    font-weight: bold;
+    margin: 30px 0 5px 0;
+}
+
+.sign-txt{
+    color: white;
+    margin: 0 0 30px 0;
+}
+
+.sign-button{
+    color: white;
+    background-color: #3882F6;
+    border-radius: 7px;
+    padding:3px 20px;
+    border-color: white;
+    border-style: solid;
+    font-weight: bolder;
+}
+
+/*Footer*/
+
 .container5{
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    flex: 0 0 5%;
+}
+
+.footer-text{
+    color: #F9FAF8;
     
 }
